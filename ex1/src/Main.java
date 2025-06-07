@@ -2,19 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         Scanner entrada = new Scanner(System.in);
 
-        int horaInicial = 0;
-        int minutosInicial = 0;
-        int horaFinal = 0 ;
-        int minutosFinal = 0 ;
-        int i = 0;
-        int validacao;
-
         System.out.println("Digite somente o valor da hora que você iniciou o jogo: ");
-        horaInicial = entrada.nextInt();
+        int horaInicial = entrada.nextInt();
 
+        int i = 0;
         while (i != 1 ){
             if (horaInicial < 24 && horaInicial > (-1)){
                 i = 1;
@@ -22,12 +15,12 @@ public class Main {
                 System.out.println("Hora inicial invalida.");
 
                 System.out.println(" Novamente, digite somente o valor da hora que você iniciou o jogo: ");
-                horaInicial = entrada.nextInt();
+                    horaInicial = entrada.nextInt();
             }
         }
 
         System.out.println("Digite somente o valor do minutos que você iniciou o jogo: ");
-        minutosInicial = entrada.nextInt();
+         int minutosInicial = entrada.nextInt();
 
         while (i != 2){
             if (minutosInicial < 61 && minutosInicial > (-1)){
@@ -41,7 +34,7 @@ public class Main {
         }
 
         System.out.println("Digite somete o valor da hora que você finalizou o jogo: ");
-        horaFinal = entrada.nextInt();
+        int horaFinal = entrada.nextInt();
 
         while (i != 3){
             if (horaFinal < 24 && horaFinal > (-1)){
@@ -55,7 +48,7 @@ public class Main {
         }
 
         System.out.println("Digite somente o valor do minuto que você finalizou o jogo: ");
-        minutosFinal = entrada.nextInt();
+        int minutosFinal = entrada.nextInt();
 
         while (i != 4){
             if (minutosFinal < 61 && minutosFinal > (-1)){
@@ -69,7 +62,7 @@ public class Main {
         }
 
         System.out.println("Se você finalizou o jogo no mesmo dia, digite 1, caso contrario, você finalizou o jogo no dia seguine, digite 2.");
-        validacao = entrada.nextInt();
+        int validacao = entrada.nextInt();
 
         while ( i != 1){
             if (validacao == 1 || validacao == 2){
