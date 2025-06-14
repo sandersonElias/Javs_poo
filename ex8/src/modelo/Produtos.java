@@ -3,13 +3,13 @@ package modelo;
 public class Produtos {
 
     private String nome;
-    private String descicao;
+    private String descricao;
     private double preco;
     private int estoqueDisponivel;
 
     public Produtos(String nome, String descicao, double preco, int estoqueDisponivel) {
         this.nome = nome;
-        this.descicao = descicao;
+        this.descricao = descicao;
         this.preco = preco;
         this.estoqueDisponivel = estoqueDisponivel;
     }
@@ -22,12 +22,12 @@ public class Produtos {
         this.nome = nome;
     }
 
-    public String getDescicao() {
-        return descicao;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setDescicao(String descicao) {
-        this.descicao = descicao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public double getPreco() {
